@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    #pd1{
+        border: 1px solid red;
+        height: 440px;
+        width: 500px;
+        display: grid; 
+        grid-template-columns: repeat();
+        grid-template-rows:auto auto auto ;
+        gap: 3px;
+        /* grid-template-areas: auto auto auto auto; */
+
+
+    }
+    .a1,.a2,.a3,.a4,.a5,.a6,.a7,.a8,.a9{
+        border: 1px solid orange;
+        justify-content: center;
+        align-content: center;
+    
+        display: grid;
+    }
+    .a1{
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-color: red;
+        
+        
+    }
+    .a2{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: rgb(0, 255, 255);
+    }
+    .a3{
+        grid-column-start: 5;
+        grid-column-end:8;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: gold;
+    }
+    .a4{
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: gold;
+    }
+    .a5{
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        background-color: whitesmoke;
+    }
+    .a6{
+        grid-row-start: 3;
+        grid-row-end:8 ;
+        background-color:red;
+    }
+    .a7{
+        grid-row-start:4 ;
+        grid-row-end: 8;
+        background-color: whitesmoke;
+    }
+    .a8{
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start:5 ;
+        grid-row-end:8 ;
+        background-color: red;
+    }
+    .a9{
+        grid-row-start:5 ;
+        grid-row-end:8 ;
+        background-color: blue;
+    }
+    #pd2{
+        border: 1px solid blueviolet;
+        height: 350px;
+        width: 350px;
+        display: grid;
+        gap: 3px;
+
+    }
+    .b1,.b2,.b3,.b4,.b5,.b6{
+        border: 1px solid red;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        
+
+
+    }
+    .b1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        
+         background-image: conic-gradient(red, yellow, green);
+        
+
+    
+    }
+    .b2{
+        grid-row-start: 2;
+        grid-row-end: 6;
+        background-image:conic-gradient(black,blue,yellow);
+        color:white;
+    }
+    .b3{
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-image: linear-gradient(brown,red);
+        
+    }
+    .b4{
+       grid-row-start:5 ;
+       grid-column-start:2 ;
+       background-color: whitesmoke;
+    }
+    .b6{
+        grid-row-start:6 ;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: orange;
+    }
+    .b5{
+        background-color:wheat;
+    }
+
+    #pd{
+            border: 1px solid red;
+            height: 400px;
+            width: 400px;
+            display: grid;
+            gap: 5px;
+            background-color: azure;
+          
+
+
+             }
+        .a11,.a22,.a33,.a44,.a55,.a66{
+            border: 1px solid green;
+            
+    
+            display: grid;
+            justify-content:center;
+            align-content: center;
+             }
+        .a11{
+            background-color: aquamarine;
+            grid-column-start: 1;
+            grid-column-end: 4;
+    
+        }
+        .a22{
+
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: lightgreen;
+
+    
+        }
+        .a33{
+            grid-row-start:3;
+            grid-row-end: 5;
+            background-color: greenyellow;
+        
+        }
+        .a44{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: rgba(0, 0, 255, 0.5);
+            color: white;
+        }
+        .a55{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background-color: rgba(0, 0, 128, 0.664);
+            color: white;
+            
+        }
+        .a66{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: aquamarine;
+        }
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+  
+        
+    
+   </style>
+</head>
+<body>
+    <div id="pd1">
+       <div class="a1"></div>
+       <div class="a2"></div>
+       <div class="a3"></div>
+       <div class="a4"></div>
+       <div class="a5"></div>
+       <div class="a6"></div>
+       <div class="a7"></div>
+       <div class="a8"></div>
+       <div class="a9"></div>
+    </div>
+    <hr>
+    <div id="pd2">
+        <div class="b1">HEADER</div>
+         <div class="b2">SLIDEBAR</div>
+          <div class="b3">CONTENT 1</div>
+           <div class="b4">CONTENT 2</div>
+            <div class="b5">CONTENT 3</div>
+             <div class="b6">FOOTER</div>
+
+    </div>
+    <hr>
+    <div id="pd">
+        <div class="a11" >Header</div>
+        <div class="a22">Navigation</div>
+        <div class="a33">Aside</Aside></div>
+        <div class="a44">content</div>
+        <div class="a55">section</div>
+        <div class="a66">Footer</div>
+      
+       </div>
+</body>
+</html>
